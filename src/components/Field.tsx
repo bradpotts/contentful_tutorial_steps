@@ -16,10 +16,11 @@ interface FieldProps {
     sdk: FieldExtensionSDK;
 }
 
-/** An Item which represents an list item of the repeater app */
+/* Tutorial Repeater Items */
 interface Item {
     id: string;
     tutorial_step_number: string;
+    tutorial_step_title: string;
     tutorial_step_description: string;
     tutorial_step_command: string;
 }
@@ -31,6 +32,7 @@ function createItem(): Item {
     return {
         id: uuid(),
         tutorial_step_number: '',
+        tutorial_step_title: '',
         tutorial_step_description: '',
         tutorial_step_command: '',
     };
@@ -65,7 +67,7 @@ const Field = (props: FieldProps) => {
     /** Creates an `onChange` handler for an item based on its `property`
      * @returns A function which takes an `onChange` event 
     */
-    const createOnChangeHandler = (item: Item, property: 'tutorial_step_number' | 'tutorial_step_description' | 'tutorial_step_command') => (
+    const createOnChangeHandler = (item: Item, property: 'tutorial_step_number' | 'tutorial_step_title' | 'tutorial_step_description' | 'tutorial_step_command') => (
         e: React.ChangeEvent<HTMLInputElement>
     ) => {
         const itemList = items.concat();
@@ -94,6 +96,15 @@ const Field = (props: FieldProps) => {
                                     labelText="Step Number"
                                     value={item.tutorial_step_number}
                                     onChange={createOnChangeHandler(item, 'tutorial_step_number')}
+                                />
+                            </TableCell>
+                            <TableCell>
+                                <TextField
+                                    id="tutorial_step_title"
+                                    name="tutorial_step_title"
+                                    labelText="Step Title"
+                                    value={item.tutorial_step_title}
+                                    onChange={createOnChangeHandler(item, 'tutorial_step_title')}
                                 />
                             </TableCell>
                             <TableCell>
