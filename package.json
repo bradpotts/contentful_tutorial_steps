@@ -46,7 +46,8 @@
     ]
   },
   "devDependencies": {
-    "@contentful/app-scripts": "^0.12.58"
+    "@contentful/app-scripts": "^0.12.58",
+    "@types/uuid": "^8.3.4"
   },
   "homepage": "."
 }
