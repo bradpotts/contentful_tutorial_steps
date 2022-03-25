@@ -8,6 +8,6 @@ Thanks to Contentful repeater-app for providing good starting point, this projec
  - Step Description (Text) - Description for tutorial step
  - Step Command (Text) - Command to copy for tutorial step
   
-Credits to [davidfateh](https://github.com/davidfateh) repository [repeater-app](https://github.com/davidfateh/repeater-app) which this project is heavily based of this code.
+Credits to [davidfateh](https://github.com/davidfateh) repository [repeater-app](https://github.com/davidfateh/repeater-app) which this project is heavily based off this code.
   
 [![Install to Contentful](https://www.ctfstatic.com/button/install-small.svg)](https://app.contentful.com/deeplink?link=apps&id=3bQZBwyPoCwxgQgKpNQALl)
