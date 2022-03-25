@@ -1,4 +1,4 @@
-## Contentful Appp
+## Contentful App
 
 Thanks to Contentful repeater-app for providing good starting point, this project is heavily based on [repeater-app](https://github.com/davidfateh/repeater-app) modified for my own use on development tutorials can be used on your own Contentful app.
   
